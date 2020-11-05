@@ -1,0 +1,22 @@
+.grid {
+  width: 400px;
+  height: 600px;
+  background-color: rgb(248, 248, 117);
+  position: relative;
+  overflow: hidden;
+
+  .doodle {
+    width: 60px;
+    height: 85px;
+    background-color: red;
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+
+  .platform {
+    width: 80px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+  }
+}
