@@ -1,24 +1,59 @@
-.grid {
+body {
+  background-color: antiquewhite;
+}
+
+body .grid {
   width: 400px;
   height: 600px;
   background-color: #f8f875;
   position: relative;
   overflow: hidden;
+  margin: auto;
+  border: 1px solid black;
 }
 
-.grid .doodle {
+body .grid .doodle {
   width: 60px;
   height: 85px;
-  background-color: red;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  background-image: url("https://github.com/Brackeys/Doodle-Jump-Replica/blob/master/Doodle%20Jump/Assets/Doodler.png?raw=true");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.grid .platform {
+body .grid .platform {
   width: 80px;
   height: 15px;
-  background-color: green;
   position: absolute;
+  background-size: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://i.imgur.com/wwQS0tf.png");
+}
+
+body .score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 400px;
+  margin: 10px auto;
+}
+
+body .options {
+  width: 400px;
+  margin: 10px auto;
+}
+
+body .options__container {
+  margin-top: 20px;
+}
+
+body .options__control {
+  margin: 10px auto;
+}
+
+body .options__control label {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 /*# sourceMappingURL=app.css.map */

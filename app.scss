@@ -1,22 +1,54 @@
-.grid {
-  width: 400px;
-  height: 600px;
-  background-color: rgb(248, 248, 117);
-  position: relative;
-  overflow: hidden;
+body {
+  background-color: antiquewhite;
+  .grid {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(248, 248, 117);
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid black;
 
-  .doodle {
-    width: 60px;
-    height: 85px;
-    background-color: red;
-    position: absolute;
-    transition: all 0.2s ease;
+    .doodle {
+      width: 60px;
+      height: 85px;
+      position: absolute;
+      // transition: all 0.2s ease;
+      background-image: url("https://github.com/Brackeys/Doodle-Jump-Replica/blob/master/Doodle%20Jump/Assets/Doodler.png?raw=true");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .platform {
+      width: 80px;
+      height: 15px;
+      position: absolute;
+      background-size: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("https://i.imgur.com/wwQS0tf.png");
+    }
   }
+  .score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 400px;
+    margin: 10px auto;
+  }
+  .options {
+    width: 400px;
+    margin: 10px auto;
+    &__container {
+      margin-top: 20px;
+    }
 
-  .platform {
-    width: 80px;
-    height: 15px;
-    background-color: green;
-    position: absolute;
+    &__control {
+      margin: 10px auto;
+      label {
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+    }
   }
 }
